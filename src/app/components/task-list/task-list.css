@@ -1,0 +1,83 @@
+.task-item {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-left: 5px solid #597c9f;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.task-content h3 a {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}
+.task-content h3 :hover
+{
+color:#4687c8;
+}
+
+
+
+.task-content p {
+  margin: 6px 0;
+  color: #555;
+}
+
+
+.task-content small {
+  color: #888;
+  font-size: 12px;
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+/* buttons */
+.filters button {
+  padding: 8px 16px;
+  border: 1px solid #597c9f;
+  background: white;
+  color: #597c9f;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+/* hover */
+.filters button:hover {
+  background: #597c9f;
+  color: white;
+}
+
+/* active button */
+.filters button.active {
+  background: #597c9f;
+  color: white;
+  box-shadow: 0 3px 8px rgba(89,124,159,0.3);
+  transform: scale(1.05);
+}
+.delete {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete:hover {
+  background: #c0392b;
+}

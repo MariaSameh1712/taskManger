@@ -1,0 +1,82 @@
+.task-details-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.task-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.task-card h2 {
+  margin-bottom: 15px;
+  color: #597c9f;
+}
+
+.task-card p {
+  margin: 10px 0;
+  color: #444;
+}
+
+.completed {
+  color: rgb(22, 221, 22);
+  font-weight: bold;
+}
+
+.not-found {
+  text-align: center;
+  background: #fff3f3;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ffb3b3;
+  color: #c0392b;
+}
+.not-found button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #597c9f;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover */
+.not-found button:hover {
+  background: #3f5f7a;
+  transform: translateY(-2px);
+}
+
+/* active click */
+.not-found button:active {
+  transform: scale(0.95);
+}
+.task-card button {
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #597c9f;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover */
+.task-card button:hover {
+  background: #3f5f7a;
+  transform: translateY(-2px);
+}
+
+/* active click */
+.task-card button:active {
+  transform: scale(0.95);
+}
+

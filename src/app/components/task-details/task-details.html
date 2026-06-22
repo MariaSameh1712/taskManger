@@ -1,0 +1,36 @@
+<div class="task-details-container">
+
+  @if (task(); as t) {
+
+    <div class="task-card">
+
+      <h2>{{ t.title }}</h2>
+
+      <p><strong>Description:</strong> {{ t.description }}</p>
+
+      <p>
+        <strong>Status:</strong>
+        <span [class.completed]="t.completed">
+          {{ t.completed ? 'Completed' : 'Not Completed' }}
+        </span>
+      </p>
+
+      <p>
+        <strong>Created At:</strong>
+        {{ t.createdAt.toLocaleDateString() }}
+      </p>
+      <button routerLink="/">go back</button>
+
+    </div>
+
+  } @else {
+
+    <div class="not-found">
+      <h2>Task Not Found ❌</h2>
+      <p>No task exists with this ID.</p>
+      <button routerLink="/">go back</button>
+    </div>
+
+  }
+
+</div>

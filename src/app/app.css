@@ -1,0 +1,52 @@
+/* الصفحة بالكامل */
+.app-container{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#f4f6f9;
+}
+
+/* Navbar */
+.navbar{
+  background:#597c9f;
+  padding:1rem 2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:white;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* اسم التطبيق */
+.nav-brand h2{
+  margin:0;
+}
+
+/* الروابط */
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:500;
+  transition:0.3s;
+}
+
+/* Hover */
+.nav-links a:hover{
+  color:#dce6f2;
+}
+
+/* المحتوى */
+main{
+  flex:1;
+  padding:30px;
+}
+
+/* Footer */
+footer{
+  background:#2f3e4e;
+  color:white;
+  text-align:center;
+  padding:15px;
+}

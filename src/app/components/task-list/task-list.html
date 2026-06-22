@@ -1,0 +1,41 @@
+<div class="filters"> 
+   <button [class.active]="filter() === 'all'" (click)="setfilter('all')">All</button> 
+   <button [class.active]="filter() === 'active'" (click)="setfilter('active')">Active</button> 
+   <button [class.active]="filter() === 'completed'" (click)="setfilter('completed')">Completed</button>
+</div>
+
+<div class="task">
+
+@if(filtertask().length === 0){
+  <div class="empty">
+    <p>No tasks found. Add one to get started!</p>
+  </div>
+}
+
+@for (task of filtertask(); track task.id) 
+{
+   <div class="task-item"> 
+
+    <div class="task-content"> 
+
+        <h3>
+           <a [routerLink]="['/task', task.id]">
+             {{ task.title }}
+           </a> 
+        </h3>
+
+        <p>{{ task.description }}</p> 
+
+        <small>Created: {{ task.createdAt }}</small> 
+        
+
+    </div> 
+
+    <button class="delete" (click)="taskservice.deletetask(task.id)">
+      delete
+    </button>
+
+   </div>
+}
+
+</div>

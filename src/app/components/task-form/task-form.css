@@ -1,0 +1,86 @@
+/* container */
+form {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* form group */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* labels */
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* inputs + textarea */
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* focus effect */
+input:focus, textarea:focus {
+  border-color: #597c9f;
+  box-shadow: 0 0 5px rgba(89,124,159,0.4);
+}
+
+/* error message */
+.error small {
+  color: #e74c3c;
+  font-size: 12px;
+}
+
+/* buttons container */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* primary button */
+button[type="submit"] {
+  background: #597c9f;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover */
+button[type="submit"]:hover {
+  background: #3f5f7a;
+}
+
+/* disabled */
+
+
+/* cancel button */
+.secondary {
+  background: #e74c3c;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary:hover {
+  background: #c0392b;
+}
