@@ -10,6 +10,7 @@ import { Taskservice } from '../../task-service/taskservice';
 })
 export class TaskDetails {
 route=inject(ActivatedRoute)
+
 taskid=signal<number|null>(null)
 taskservice=inject(Taskservice)
 
